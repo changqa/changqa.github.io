@@ -11,7 +11,7 @@
 <h2 id="什么是ENS？什么是ENS短域名？"><a href="#什么是ENS？什么是ENS短域名？" class="headerlink" title="什么是ENS？什么是ENS短域名？"></a>什么是ENS？什么是ENS短域名？</h2><p><strong>假设你想打赏这篇文章…</strong></p>
 <p>比如你想用以太币打赏我这篇文章，虽然我附上了<code>0x7E2f6E2f86089Ae708425BcA2E7Bf43ad5cA486E</code>这样一长串的地址，而忘记了附上二维码：</p>
 <a id="more"></a>
-<p><img src="C:\Users\clint\AppData\Roaming\Typora\typora-user-images\1562944412769.png" alt="1562944412769"></p>
+<p><img src="https://i.loli.net/2019/07/13/5d29723e9037f59386.png" alt="打赏地址"></p>
 <p>那你大概率是不可能一位一位地把我的地址输完，再进行打赏的。</p>
 <p>但是如果我说 <code>xingqiu.eth</code> 也是我的钱包地址，只要在钱包的转账地址输入<code>xingqiu.eth</code> 就可以发起转账（不相信的同学可以用<code>imtoken</code>测试一下😀），那打赏的用户体验就大大提高了。 </p>
 <p>正如浏览器中用 <a href="http://www.google.hk" target="_blank" rel="noopener">www.google.hk</a> 取代了 66.220.147.47 ，区块链时代用 <code>xingqiu.eth</code> 取代毫无用户体验的 <code>0x7E2f6E2f86089Ae708425BcA2E7Bf43ad5cA486E</code> 显然是刚需。</p>
@@ -26,14 +26,14 @@
 <p>像是又经历一次域名淘金时代的感觉…</p>
 <h2 id="那怎么注册短域名"><a href="#那怎么注册短域名" class="headerlink" title="那怎么注册短域名"></a>那怎么注册短域名</h2><p>本文假定大家对以太坊、metamask钱包、imtoken已经有了基本的了解和使用知识，那接下来的注册过程其实和把大象放进冰箱里一样简单。除此之外还需要有一个5月4号之前注册过的二级域名（baidu.com 一类的，没有也没关系，这方面的骚操作下面有讲）。</p>
 <h3 id="1-打开冰箱门"><a href="#1-打开冰箱门" class="headerlink" title="1. 打开冰箱门"></a>1. 打开冰箱门</h3><p>使用<code>firefox</code> 或者<code>chrome</code>浏览器进行操作，安装<code>metamask</code>插件，导入以太坊钱包。然后打开ens短域名登记网站：<a href="https://reserve.ens.domains" target="_blank" rel="noopener">https://reserve.ens.domains</a> ,如果下图中红框部分没有出现，大概率是<code>metamask</code>插件没有装好。</p>
-<p><img src="C:\Users\clint\Pictures\tempsnip.png" alt="tempsnip"></p>
+<p><img src="https://i.loli.net/2019/07/13/5d29728e7146229705.png" alt="打开冰箱门"></p>
 <h3 id="2-把大象放进去"><a href="#2-把大象放进去" class="headerlink" title="2.把大象放进去"></a>2.把大象放进去</h3><p>官方为了防止恶意抢注，要求每一个短域名的申请者必须持有一个对应的二级域名（例如只有拥有baidu.com 或者 baidueth.com 才能申请 baidu.eth 的短域名），且该二级域名的注册时间要不晚于2019年5月4日。如果这些条件都满足，那下一步就是对自己已经持有的二级域名进行解析设置了。</p>
 <p><strong>增加TXT字段</strong></p>
 <p>以在阿里云购买的域名为例，<code>控制台</code>—-&gt;<code>域名</code>—-&gt;<code>选择用于申请短域名的域名</code>—-&gt;<code>域名解析</code>—-&gt;<code>添加记录</code></p>
 <p>记录类型选择<code>TXT</code>，主机记录填写<code>_ens</code>，记录值填写a=0x8888…8888（你的以太坊账户地址）</p>
-<p><img src="C:\Users\clint\Pictures\tempsnip2.png" alt="tempsnip2"></p>
+<p><img src="https://i.loli.net/2019/07/13/5d2972ae69ee920182.png" alt="把大象放进去"></p>
 <p>然后回到 <a href="https://reserve.ens.domains" target="_blank" rel="noopener">https://reserve.ens.domains</a> 进行下一步操作，在下方地址填写用于申请的域名，以及你的邮箱地址（该地址会公开，如果有隐私的顾虑，可以填一个不常用的邮箱）</p>
-<p><img src="C:\Users\clint\AppData\Roaming\Typora\typora-user-images\1562996046918.png" alt="1562996046918"></p>
+<p><img src="https://i.loli.net/2019/07/13/5d2972e81febd62857.png" alt="两个对号"></p>
 <p>当出现两个对号时，那就只剩下交钱的最后一步了。（如果第二个钩没打上，大概率是解析设置未生效，稍等片刻）</p>
 <h3 id="3-关上冰箱"><a href="#3-关上冰箱" class="headerlink" title="3.关上冰箱"></a>3.关上冰箱</h3><p><strong>收费标准</strong></p>
 <ul>
@@ -42,11 +42,11 @@
 <li>3字符的需要附上640美金价值的以太币。</li>
 </ul>
 <p>可以通过 <em>localethereum</em> 等途径换到相应价值的以太币，然后点击 <code>claim</code> 会先弹出<code>Terms and Conditions</code> 窗口，<code>Accept</code>后会自动打开<code>metamask</code>窗口，发送这笔交易，等待区块链确认即可。</p>
-<p><img src="C:\Users\clint\AppData\Roaming\Typora\typora-user-images\1562996603570.png" alt="1562996603570"></p>
+<p><img src="https://i.loli.net/2019/07/13/5d29730c05dc275859.png" alt="成功"></p>
 <p>如果在上方这张图上找到了你的申请，证明操作成功。</p>
 <p>接下来需要等到8月11号申请窗口期结束，然后由ens团队进行半个月（审核期时长可能会调整）的审核，就知道最终结果了。<strong>即使没有申请上也没有关系,现在打款的以太坊如果申请失败，会原路退还。</strong> 所以试一试，总没有坏处。</p>
 <h2 id="骚操作"><a href="#骚操作" class="headerlink" title="骚操作"></a>骚操作</h2><p>关于社区的骚操作截取如下，不做翻译和解读，大家愿意折腾，可以一试~</p>
-<p><img src="C:\Users\clint\AppData\Roaming\Typora\typora-user-images\1562996864710.png" alt="1562996864710"></p>
+<p><img src="https://i.loli.net/2019/07/13/5d2973e03b7f759691.png" alt="骚操作"></p>
 </div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Clint Chang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://39.96.184.126/2019/07/13/ENS短域名注册初体验/">http://39.96.184.126/2019/07/13/ENS短域名注册初体验/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/致富经/">致富经</a></div><div class="post-qr-code"><div class="post-qr-code-item"><img class="post-qr-code__img" src="https://i.loli.net/2019/05/09/5cd39d9a42778.jpg"><div class="post-qr-code__desc">以太坊打赏地址</div></div><div class="post-qr-code-item"><img class="post-qr-code__img" src="https://i.loli.net/2019/05/09/5cd39d9a44d9c.jpg"><div class="post-qr-code__desc">微信扫码打赏</div></div></div><div class="social-share" data-disabled="google"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script><nav id="pagination"><div class="next-post pull-right"><a href="/2019/06/05/mongodb增删改查/"><span>mongodb 增删改查备忘录</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
   clientID: 'fbbef3645c372dcb2c24',
   clientSecret: '976a154e77b0f4bf3db8b4a27c25e1030dc37388',
